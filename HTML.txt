@@ -1,0 +1,74 @@
+*Kiểu ,cấu trúc: https://docs.emmet.io/cheat-sheet/
+*Thao tác:
+ALT + W : Gán thẻ cho đoạn bôi đen
+CTRL + D : bôi đen đoạn kí tự giống đoạn đã bôi đen
+ALT + Click: Trỏ chuột nhiều mục tiêu 
+CTRL + / : Tạo thẻ ghi chú
+ALT + SHIFT + "Mũi tên xuống" : Sao chép xuống dưới
+@>@2*n : tạo thẻ @ có n thẻ @2 bên trong
+ul>li*n{item$} : tạo thẻ ul chứa n thẻ con li có nội dung item kèm $ tăng dần từ 1
+p.@ : Tạo thẻ p có  class là @
+p#001 : Tạo thẻ p có ID là 001
+
+
+*Đường dẫn tương đối , tuyệt đối cho file ,folder
+-) Tương đối: (Đến các nhánh như cha và con của thư mục; Bị ảnh hưởng khi thay đổi bậc của file ,folder con)
+./ : Truy cập vào thư mục con thêm 1 bậc với mỗi "./"
+../ : Truy cập vào thư mục cha thêm 1 bậc với mỗi "../"
+-) Tuyệt đối: (Đi từ thư mục gốc)
+/ : truy cập từng bậc con xuống với mỗi "/"
+*Thẻ:
+<p> - </p> : Đoạn (văn bản , kí tự)
+<pre> - </pre> : Như "p" nhưng đoạn văn bản sẽ định dạng y hệt như đã nhập (ko loại dấu cách thừa)
+<br> : Ngắt dòng, tự đóng, xuống dòng
+<hr> : Kẻ ngang
+<b>/<strong>(bold): đánh dấu in đậm / mang nghĩa đặc biệt nhấn mạnh
+<i>/<em>(italic) : đánh dấu in nghiêng / mang nghĩa cần nhấn mạnh
+<u>(underline) : gạch chân
+
+<li>(list item) : thẻ con của ul và ol
+<ul>(unordered list) : thẻ không thứ tự (dấu chấm tròn)
+<ol>(ordered list) : thẻ thứ tự  (đánh số)
++) <ol reversed>(ol đảo ngược) : đánh số thứ tự từ lớn đến nhỏ
++)<ol type="@"> :
+. @ = "A" : đánh thứ tự theo chữ in hoa
+. @ = "a" : đánh thứ tự theo chữ in thường 
+. @ = "I" : đánh thứ tự theo số la mã  
+
+a : Tạo thẻ <a>
+<a href="@"> Doan : đến link @ khi click vào Doan
+<a href="#"> Doan : Trở về đầu trang khi click vào Doan 
+<a href="@"target="_self"> Doan : mở link @ trong trang hiện tại khi click vào Doan (như khi không có target)
+<a href="@"target="_blank"> Doan : mở link @ trong trang mới khi click vào Doan
+<a href="tel:+0969167413"> Doan : gọi đến số +0969167413 trong 1 ứng dụng có trên máy khi click vào Doan
+<a href="mailto: @"> Doan : chuyển hướng để gửi tin tới email @ khi click vào Doan
+
+img : tạo the img kèm alt ; Lấy địa chỉ ảnh, xóa từ dấu ?
+<figure> img <figcaption>Moew</figcaption></figure>: Hiển thị ảnh độc lập với caption Moew
+<img src="@" alt="#" width="n1" height="n2"/> : Hiển thị hình ảnh trong @ hoặc văn bản # nếu như ảnh lỗi .Chiều rộng ảnh n1 , chiều cao ảnh n2 ; Không để sẽ hiển thị ảnh theo kích thước của ảnh ; Chỉ để 1 chỉ số thì chỉ số còn lại sẽ tự động căn cho ảnh đều.
+<a href="@"><img src="img" alt="Quan Dui"/></a> : Nhấn vào ảnh sẽ truy cập đến link @
+
+<code></code> : Định dạng trong là văn bản code mã hóa VD: <code>&lt h1 &gt</code>
+https://codebeautify.org/html-escape-unescape :Chuyển code thành code mã hóa cho việc hiển thị
+
+<table></table> : Vẽ bảng (các thẻ thành phần của bảng phải ở bên trong)
+<tr></tr>(table row) : hàng của bảng
+<td></td>(table data) : dữ liệu của bảng
+<th></th>(table header) : tiêu đề của bảng
+<thead></thead> : thường chứa các ô tiêu đề trên bảng 
+<tbody></tbody> : thường chứa các ô tr và ô dữ liệu của th trong bảng 
+<tfoot></tfoot> : tổng kết
+colspan>: Chỉ định phần tử chiếm bao nhiêu cột
+rowspan>: Chỉ định phần tử chiếm bao nhiêu hàng
+VD: 
+<table>
+<tr>
+<th>Tên sản phầm</th>
+<th>Gía thành</th>
+</tr>
+<tr>
+<td colspan= "2">  Bánh mì</td>
+<td rowspan="2">  5k</td>
+</tr>
+</table>
+

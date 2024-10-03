@@ -1,0 +1,12 @@
+h2:hover {
+  color: aqua;
+}
+h2:active {
+  background-color: black;
+}
+a[target="_blank"]:link {
+  color: red;
+}
+a[target="_blank"]:visited {
+  color: green;
+}

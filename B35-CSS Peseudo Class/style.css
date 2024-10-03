@@ -1,0 +1,13 @@
+.So1:empty {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+.So1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+h2:target {
+  color: blue;
+}

@@ -1,0 +1,9 @@
+[href] {
+  color: blanchedalmond;
+}
+p[href] {
+  color: blueviolet;
+}
+[target="_top"] {
+  font-size: 50px;
+}

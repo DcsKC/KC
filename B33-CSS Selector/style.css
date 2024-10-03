@@ -1,0 +1,12 @@
+[title~="an"] {
+  color: red;
+}
+[title*="an"] {
+  font-size: 50px;
+}
+[title|="an"] {
+  color: blue;
+}
+[title^="an"] {
+  background-color: aqua;
+}

@@ -1,0 +1,146 @@
+Độ ưu tiên : 1 - 2 - 3
+1.CSS nội tuyến (Viết mã ngay trong phần tử html)
+- Khó thay đổi.
+Cấu trúc : "Property: value" (Thuộc tính: giá trị) VD: <h1 style="color: pink;"> Béo </h1>
+
+2.Internal nội bộ 
+- Thay đổi cho toàn trang nhưng khó kiểm soát trong dự án lớn
+VD: 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1,
+      p {
+        color: blue;
+        font-style: italic;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Béo</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
+
+3.External ngoại
+- Thao tác:
+link:css : Tạo liên kết tới file CSS
+
+VD: 
+1.File html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Béo</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h2>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </h2>
+  </body>
+</html>
+2.FILE CSS
+h1,
+p {
+  color: blue;
+  font-style: italic;
+}
+
+4.Thuộc tính cơ bản 
+https://www.w3schools.com/cssref/index.php
+color: màu
+font- style : kiểu chữ
+font- family : phông chữ
+text-transform : chuyển hoa hay thường
+text - align: căn dòng 
+opacity: Độ trong suốt (0.0 - 1.0 / 0% - 100%)
+display: Hiển thị (none:ẩn và xóa không gian chiếm dụng trên giao diện,)
+visibility :hidden :ẩn nhưng vẫn giữ không gian,có thừa kế(tác động đến cả thẻ con), có hỗ trợ animation
+
+5.animation
+transition: @s; :delay @ giây để hiển thị khi tác động
+6.Khung, phông
+Background: nền
+"Background-image: url(@)" :set ảnh nền là @
+VD:
+7.Favicon ( ảnh icon của web , logo)
+Liên kết trong HTML: <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> (Link:favicon)
+href="favicon.ico" thay "favicon.ico" bằng link ảnh muốn
+
+8.Prefix (Không phải thuộc tính nào cũng hỗ trợ tất cả trình duyệt)
+https://autoprefixer.github.io/
+https://caniuse.com/ : Kiểm tra xem thuộc tính có hỗ trợ nền tảng này hay không
+
+9.Selector  
+https://www.w3schools.com/cssref/css_selectors.php
+https://www.w3schools.com/CSS/css_selectors.asp
+
+ID : sử dụng để chỉ tác động đến phần tử có ID đó (Id là độc nhất)
+"#": gọi Id trong css
+Class: như Id nhưng được nhiều phần tử (Có thể cách dòng và thêm 1 class vào phần tử VD:<h3 class="demo1 demo2">)
+".": gọi class trong css
+VD: D:\Kì 4\LT Web\HTML\KC\B27-CSS selector
+
+"*" : tác động đến toàn bộ file html kết nối đến
+"p.demo" : Chỉ tác động đến các thẻ p có class là demo
+VD: D:\Kì 4\LT Web\HTML\KC\B28-CSS Selector
+
+"h1,h2,...": tác động kết hợp h1,h2 và ...
+"h1,.demo1,#title1" : Tác động kết hợp thẻ h1 và class demo1 cùng id title1
+"demo1.demo2" : Tác động đến thẻ có cả hai class demo1 và demo2 (HTML : <h1 class="demo1 demo2")
+"div p" : Tác động đến các thẻ p là con của thẻ div
+".demo p" : Tác động đến các thẻ p là con của class demo
+"div>p" : Tác động vào các thẻ p là con trực tiếp (cấp 1) của thẻ div
+VD: D:\Kì 4\LT Web\HTML\KC\B29-CSS Selector
+
+"p1 + p2" : Tác động đến thẻ p2 kề ngay sau the p1
+"p1 ~ p2" : Chọn tất cả thẻ p2 sau thẻ p1
+VD: D:\Kì 4\LT Web\HTML\KC\B31-CSS SELECTOR\index.html
+
+attribute
+[@] : Tác động đến thẻ có thuộc tính @
+a[@] : Tác động đến những thẻ a có thuộc tính @
+a[@ = "..."] : Tác động đến những thẻ a có thuộc tính @ với giá trị "..."
+VD: D:\Kì 4\LT Web\HTML\KC\B32-CSS Selector
+
+[@ ~= "..."] : Tác động đến các thẻ trong thuộc tính có chứa đoạn "..." (VD: ... bai1)
+[@ *= "..."] : Tác động đến các thẻ trong thuộc tính có chứa chuỗi "..." (VD: ...bai1)
+[@ |= "..."] : Tác động đến các thẻ trong thuộc tính bắt đầu bằng đoạn "..." (VD: ...-bai1-thứ2)
+[@ ^= "..."] : Tác động đến các thẻ trong thuộc tính bắt đầu bằng chuỗi "..." và không quan tâm kí tự sau (VD: ...bai1thứ2)
+[@ $= "..."] : Tác động đến các thẻ trong thuộc tính kết thúc bằng ký chuỗi "..." 
+
+10.Pseudo class(Lớp giả)
+https://www.w3schools.com/css/css_pseudo_classes.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+p áp dụng cho class,id , attribute
+p:hover : Tác động vào thẻ p khi di chuột qua
+p:active : Tác động vào thẻ p khi giữ chuột bào nó
+D:\Kì 4\LT Web\HTML\KC\B34-CSS Peseudo class
+
+p:link : Tác động vào thẻ p khi chưa truy cập link
+p:visited : Tác động vào thẻ p khi đã truy cập link
+p:empty : Tác động vào thẻ p khi nó trống thông tin 
+#p:target : Tác động vào thẻ có ID p khi url hay địa chỉ có hash là p (VD: index.html#p)
+D:\Kì 4\LT Web\HTML\KC\B35-CSS Peseudo Class
+
+p:first-child : Tác động vào con thẻ con đầu tiên của p
+p:last-child : Tác động vào thẻ con cuối cùng của p
+p:nth-child(n) : Tác động vào thẻ con thứ n từ trên xuống của p
+p:nth-last-child(n) : Tác động vào thẻ con thứ n từ dưới lên của p
+*Nếu thay n bằng 1 biểu thức sẽ thực hiện liên tục VD: n+2 - Tác động vào mỗi thẻ n+1 (2 4 6 8 10 ... n+2 với n = 0)
+*Thay n bằng odd : Tác động vào các thẻ con cùng loại có số thứ tự là lẻ
+p:only-child : Tác động vào thẻ p là thẻ con duy nhất 
+D:\Kì 4\LT Web\HTML\KC\B36-CSS Peseudo class

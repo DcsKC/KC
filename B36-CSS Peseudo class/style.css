@@ -1,0 +1,15 @@
+p:first-child {
+  color: red;
+}
+p:last-child {
+  color: blue;
+}
+p:nth-child(3) {
+  color: purple;
+}
+p:nth-last-child(2) {
+  color: aqua;
+}
+p:only-child {
+  color: brown;
+}
