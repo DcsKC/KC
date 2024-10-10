@@ -1,5 +1,11 @@
 Độ ưu tiên : 1 - 2 - 3
-1.CSS nội tuyến (Viết mã ngay trong phần tử html)
+!important (color: red !important;)
+Inline style(<h1 style="color : red;"/h1>)
+ID(#)
+Class(.)
+Thẻ thuộc tính(h1,h2,p,...)
+*(Toàn bộ thuộc tính,thẻ trong trang)(*{color:red;})
+1.CSS nội tuyến (Viết mã ngay trong phần tử html) - Inline style
 - Khó thay đổi.
 Cấu trúc : "Property: value" (Thuộc tính: giá trị) VD: <h1 style="color: pink;"> Béo </h1>
 
@@ -136,11 +142,38 @@ p:empty : Tác động vào thẻ p khi nó trống thông tin
 #p:target : Tác động vào thẻ có ID p khi url hay địa chỉ có hash là p (VD: index.html#p)
 D:\Kì 4\LT Web\HTML\KC\B35-CSS Peseudo Class
 
-p:first-child : Tác động vào con thẻ con đầu tiên của p
-p:last-child : Tác động vào thẻ con cuối cùng của p
-p:nth-child(n) : Tác động vào thẻ con thứ n từ trên xuống của p
-p:nth-last-child(n) : Tác động vào thẻ con thứ n từ dưới lên của p
-*Nếu thay n bằng 1 biểu thức sẽ thực hiện liên tục VD: n+2 - Tác động vào mỗi thẻ n+1 (2 4 6 8 10 ... n+2 với n = 0)
-*Thay n bằng odd : Tác động vào các thẻ con cùng loại có số thứ tự là lẻ
+p:first-child : Tác động vào thẻ p là con đầu tiên 
+p:last-child : Tác động vào thẻ p là con cuối cùng của 
+p:nth-child(n) : Tác động vào thẻ p là con thứ n từ trên xuống 
+p:nth-last-child(n) : Tác động vào thẻ p là con thứ n từ dưới lên 
 p:only-child : Tác động vào thẻ p là thẻ con duy nhất 
 D:\Kì 4\LT Web\HTML\KC\B36-CSS Peseudo class
+*Nếu thay n bằng 1 biểu thức sẽ thực hiện liên tục VD: n+2 - Tác động vào mỗi thẻ n+1 (2 4 6 8 10 ... n+2 với n = 0)
+*Thay n bằng odd : Tác động vào các thẻ con cùng loại có số thứ tự là lẻ
++ even : Nhảy theo số chẵn
+
+p:first-of-type : Tác động vào thẻ có kiểu p đầu tiên trong thẻ
+p:nth-of-type(2) : Tác động vào thẻ có kiểu p thứ n từ trên xuống trong thẻ
+p:only-of-type : Tác động vào thẻ p là thẻ p duy nhất trong thẻ
+.h3:not(h3) : Tác động vào những thẻ có class ".h3" ngoại trừ thẻ h3 có class này (Có thể chọn bất kì bộ nào như first-child hay first-of-type)
+D:\Kì 4\LT Web\HTML\KC\B37-CSS Peseudo class\index.html
+
+11.Box Model : Trình duyệt luôn coi mọi phần tử là 1 hình hộp chữ nhật
+Từ trong ra ngoài gồm:
+1-Nội dung
+2-padding : Khoảng đệm nội dung và viền
+3-border : Viền 
+4-Margin : Khoảng cách đến phần tử liền kề khác (Kích thước của Margin ko bao gồm thuộc tính này)
+pl10 : padding-left:10px; (  Ví dụ viết tắt)
+padding: 1px; : all
+padding: 1px 2px; : Trên,dưới Trái.phải
+padding: 1px 2px 3px; : Trên Trái,phải dưới
+padding: 1px 2px 3px 4px; : Trên Phải Dưới Trái 
+border: "Độ rộng" "kiểu viền" "Màu viền" : Tạo viền với những chỉ số trong ngoặc kép
++)Kiểu viền: solid, dashed(Nét đứt), Dotted(chấm dot), double(Viền kép), groove(Viền 3D), ridge, inset, outset
+Cấu trúc riêng từng cạnh:
+border-radius: bo góc của Viền (Có thể chỉnh riêng cho từng chiều như padding)
+margin: khoảng cách với các phần tử còn lại liền kề (Có thể chỉnh riêng cho từng chiều như padding)
+margin âm để tạo hiệu ứng avatar lồng
+style="display inline-block"
+D:\Kì 4\LT Web\HTML\KC\CSS Box Model

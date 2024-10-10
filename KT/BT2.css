@@ -1,0 +1,27 @@
+.menu {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 5px solid;
+  border-color: pink;
+  background-color: #3c0000;
+  text-align: center;
+}
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 2%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.menu li a:hover {
+  text-decoration: underline;
+  background-color: #550000;
+}

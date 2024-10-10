@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký giấy phép lái xe ô tô</title>
+    <link rel="stylesheet" href="BT3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>T-SPEED COMPANY</h1>
+        <p>Đăng ký giấy phép lái xe ô tô</p>
+      </header>
+      <aside class="menu">
+        <ul>
+          <li><a href="#">Quảng cáo</a></li>
+          <li><a href="#">Giới thiệu sản phẩm</a></li>
+          <li><a href="#">Hợp tác</a></li>
+          <li><a href="#">Các đại lý</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Đặt hàng</a></li>
+        </ul>
+      </aside>
+      <main class="form-section">
+        <form>
+          <label for="fullname">Họ tên:</label>
+          <input type="text" id="fullname" name="fullname" />
+
+          <label for="idcard">Số CMND:</label>
+          <input type="text" id="idcard" name="idcard" />
+
+          <label for="hometown">Hộ khẩu:</label>
+          <select id="hometown" name="hometown">
+            <option value="HCM">TP Hồ Chí Minh</option>
+            <option value="HN">Hà Nội</option>
+            <option value="DN">Đà Nẵng</option>
+          </select>
+
+          <label for="car-image">Hình xe:</label>
+          <select id="car-image" name="car-image">
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="ford">Ford</option>
+          </select>
+
+          <input type="submit" value="Thêm" />
+          <input type="button" value="Xóa" />
+        </form>
+
+        <h3>DANH SÁCH ĐĂNG KÝ XE</h3>
+        <table>
+          <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Xem chi tiết</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Nguyễn Thị Thanh Thảo</td>
+            <td><a href="#">Chi tiết</a></td>
+          </tr>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

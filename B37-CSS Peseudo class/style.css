@@ -1,0 +1,14 @@
+p:first-of-type {
+  color: red;
+  font-size: 40px;
+}
+p:nth-of-type(2) {
+  color: blue;
+}
+p:only-of-type {
+  color: green;
+}
+.h3:not(h3) {
+  color: blue;
+  font-size: 100px;
+}
