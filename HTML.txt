@@ -1,14 +1,17 @@
 *Kiểu ,cấu trúc: https://docs.emmet.io/cheat-sheet/
 *Thao tác:
+SHIFT + ALT + "Mũi tên xuống" : Copy dòng hiện tại xuống
 ALT + W : Gán thẻ cho đoạn bôi đen
 CTRL + D : bôi đen đoạn kí tự giống đoạn đã bôi đen
 ALT + Click: Trỏ chuột nhiều mục tiêu 
 CTRL + / : Tạo thẻ ghi chú
 ALT + SHIFT + "Mũi tên xuống" : Sao chép xuống dưới
+CTRL + L : Bôi đen cả dòng
 @>@2*n : tạo thẻ @ có n thẻ @2 bên trong
 ul>li*n{item$} : tạo thẻ ul chứa n thẻ con li có nội dung item kèm $ tăng dần từ 1
 p.@ : Tạo thẻ p có  class là @
 p#001 : Tạo thẻ p có ID là 001
+
 
 
 *Đường dẫn tương đối , tuyệt đối cho file ,folder
