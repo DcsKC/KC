@@ -1,5 +1,6 @@
 *Kiểu ,cấu trúc: https://docs.emmet.io/cheat-sheet/
-*Thao tác:
+*Thao tác: 
+CTRL + SPACE : mở gợi ý code
 SHIFT + ALT + "Mũi tên xuống" : Copy dòng hiện tại xuống
 ALT + W : Gán thẻ cho đoạn bôi đen
 CTRL + D : bôi đen đoạn kí tự giống đoạn đã bôi đen
