@@ -188,3 +188,24 @@ Nhúng JS vào body:
 Offline:
 Copy folder css và js từ D:\Kì 4\LT Web vào folder làm việc
 Link đến file css bên trong Folder css(bootstrap.min.css) và Link đến file js trong Folder js (bootstrap.min.js / popper.min.js / bundle.min.js là cả 2)
+*Margin and Padding:
+{property}{sides}-{size} (Thêm n trước size để thành margin âm)
+  -Property:
+   m - for classes that set margin
+   p - for classes that set padding
+  -sides:
+   t - top (Phía trên)
+   b - bottom (Phía Dưới)
+   s - start (Hướng bắt đầu đọc của ngôn ngữ được chọn VD: Vietnamese là bên trái)
+   e - end (Hướng kết thúc của ngôn ngữ được chọn VD: Vietnamese là bên Phải)
+   x - left and right ( Trái và phải)
+   y - top and bottom (Trên và dưới)
+   blank/"Ko ghi gì" - Cả 4 hướng
+  -size:
+   0 - 0
+   1 - $spacer * .25
+   2 - $spacer * .5
+   3 - $spacer
+   4 - * 1.5
+   5 - * 3
+   auto - auto 
